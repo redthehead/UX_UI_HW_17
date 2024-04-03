@@ -1,4 +1,90 @@
 body {
+   display: flex;
+   flex-direction: column;
+}
+.headerOne {
+   font-size: 64px;
+   color: black;
+}
+.navBar {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   height: 30px;
+   width: 300px;
+   margin-left: 0;
+}
+#headerName {
+   font-size: 64px;
+}
+#headerJob {
+   font-size: 24px;
+}
+.headerImg {
+   float: right;
+   border-radius: 8px;
+   width:914px;
+   height: 299px;
+   object-position: (0,0);
+}
+.headerTwo {
+   color: #731702;
+}
+.aboutAndSkills {
+   display: flex;
+   margin-top: 20px;
+}
+.aboutMe,
+.skills {
+   flex: 1;
+   margin: 0 10px;
+}
+.aboutMe {
+   background-color: #f2daac;
+   opacity: 0.85;
+   padding: 10px;
+}
+.skills {
+   background-color: #f2daac;
+   opacity: 0.85;
+   padding: 10px;
+}
+.caseStudiesContainer {
+   text-align: center;
+   margin-top: 20px;
+}
+.projectBox {
+   display: flex;
+   justify-content: space-around;
+}
+.projectBox1,
+.projectBox2,
+.projectBox3 {
+   flex: 1;
+   margin: 0 10px;
+   padding: 10px;
+   background-color: #f2daac;
+} /* I kinda cleaned up your project box stuff. In my opinion its easier to do it this way while still allowing for modularity*/ 
+.headerThree {
+   color: black;
+}
+.button {
+   background-color: #f1c84a;
+   color: black;
+}
+.portrait {
+   width: 100%; /*I made the width into 100% so it just fills the container. Now you can just scale the container to get the correct size instead of fiddling a little with both. You didn't do it incorrectly though, this is just the way I do it so you can always change it back.*/
+   height: auto; /* Keep the aspect ratio so it doesnt get warped on devices with weird aspect ratios */
+   border-radius: 8%;
+   margin-top: 20px; /* I added margin to separate it a little*/
+}
+
+
+/*
+
+Old Code:
+
+body {
     display: flex;
     flex-direction: column;
 }
@@ -60,3 +146,4 @@ body {
     height: 440px;
     border-radius: 8%;
  }
+*/
