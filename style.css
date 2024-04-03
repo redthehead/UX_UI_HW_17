@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.headerOne {
+    font-size:64px;
+    color: black;
+ }
+ .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height:30px;
+    width:300px;
+    margin: left;
+ }
+ #headerName {
+    font-size: 64px;
+ }
+ #headerJob {
+    font-size: 24px;
+ }
+ .headerImg {
+    float: right;
+    border-radius: 8px;
+    width:914px;
+    height: 299px;
+    object-position: (0,0);
+ }
+ .headerTwo{
+    color: #731702;
+ }
+ .aboutMe {
+    padding:10,10,10,10;
+    background-color: #F2DAAC;
+    opacity: 85%;
+ }
+ .description {
+    padding: 10,10,10,10;
+ }
+ .projectBox {
+    background-color: #F2DAAC;
+    padding: 25px, 25px, 25px, 25px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "projectBox1 projectBox2 projectBox3";
+    justify-content: space-evenly;
+    width: 466px;
+ }
+ .headerThree {
+    color: black
+ }
+ .button {
+    background-color: #F1C84A;
+    color: black
+ }
+ .portrait { 
+    width: 438px;
+    height: 440px;
+    border-radius: 8%;
+ }
