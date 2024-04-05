@@ -1,34 +1,39 @@
 body {
    display: flex;
    flex-direction: column;
+   font-family: "Josefin Slab", "Klee One";
 }
 .headerOne {
    font-size: 64px;
    color: black;
+   font-family: "Josefin Slab";
 }
 .navBar {
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
-   height: 30px;
-   width: 300px;
-   margin-left: 0;
+   margin-left: 30px;
+   padding: auto;
+   text-decoration: underline;
+   text-underline-offset: 10px;
 }
 #headerName {
    font-size: 64px;
+   font-family: "Josefin Slab";
 }
 #headerJob {
    font-size: 24px;
+   font-family: "Klee One";
 }
 .headerImg {
    float: right;
-   border-radius: 8px;
+   border-radius:8%;
    width:914px;
    height: 299px;
-   object-position: (0,0);
 }
 .headerTwo {
    color: #731702;
+   font-family: "Klee One";
 }
 .aboutAndSkills {
    display: flex;
@@ -38,16 +43,23 @@ body {
 .skills {
    flex: 1;
    margin: 0 10px;
+   border-radius: 25px;
 }
 .aboutMe {
    background-color: #f2daac;
    opacity: 0.85;
    padding: 10px;
+   width: 634px;
+   height: 317;
+   flex: 66%;
 }
 .skills {
    background-color: #f2daac;
    opacity: 0.85;
    padding: 10px;
+   width: 317px;
+   height: 257px;
+   flex: 33%;
 }
 .caseStudiesContainer {
    text-align: center;
@@ -62,21 +74,45 @@ body {
 .projectBox3 {
    flex: 1;
    margin: 0 10px;
-   padding: 10px;
+   padding-bottom: 50px;
    background-color: #f2daac;
-} /* I kinda cleaned up your project box stuff. In my opinion its easier to do it this way while still allowing for modularity*/ 
+   border-radius: 25px;
+} 
 .headerThree {
    color: black;
 }
 .button {
    background-color: #f1c84a;
    color: black;
+   border-radius: 15px;
+   padding: 14px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
 }
 .portrait {
-   width: 100%; /*I made the width into 100% so it just fills the container. Now you can just scale the container to get the correct size instead of fiddling a little with both. You didn't do it incorrectly though, this is just the way I do it so you can always change it back.*/
-   height: auto; /* Keep the aspect ratio so it doesnt get warped on devices with weird aspect ratios */
+   width: 100%; 
+   height: auto; 
    border-radius: 8%;
-   margin-top: 20px; /* I added margin to separate it a little*/
+   margin-top: 20px; 
+}
+#portrait{
+   width: 400px;
+   height: 400px;
+}
+.connect {
+   display: flex;
+   display: table-column-group;
+   align-content: space-around;
+}
+.descripion{
+   padding: 10px;
+   margin: 10px;
+}
+footer {
+   opacity: 0.85;
+   background-color: #f2daac;
 }
 
 

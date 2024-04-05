@@ -2,21 +2,24 @@
 <html>
 <head>
     <title>Carolyn Redford Portfolio</title>
-    <link rel="stylesheet" href="style.css">  <!-- Your CSS wasnt changing because you weren't correctly pointing to the CSS file. This is what it looked like before -> "../css/style.css". In order for this to work the style.css file would have to be in a folder called css.-->
+    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Klee+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <nav class="navBar">
         <h3 class="navBar">Home</h3>
-        <h3 class="navBar">About</h3>
-        <h3 class="navBar">Projects</h3>
+        <h3 class="navBar">About Me</h3>
+        <h3 class="navBar">Case Studies</h3>
     </nav>
     <section class="headerOne">
         <h1 id="headerName">Carolyn Redford</h1>
         <h3 id="headerJob">UX Designer</h3>
     </section>
-    <div class="headerImg">
-        <img src="images/Untitled.jpg" alt="Yellow Flowers" class="headerImage"> <!-- Your flowers image wasn't being pointed to correctly either. it used to look like this: "../images/Untitled.jpg"-->
+    <div>
+        <img class="headerImg" src="images/Untitled.jpg" alt="Yellow Flowers" class="headerImage"> <!-- Your flowers image wasn't being pointed to correctly either. it used to look like this: "../images/Untitled.jpg"-->
     </div>
 </header>
 <section class="aboutAndSkills"> 
@@ -71,23 +74,21 @@
         </div>
     </section>
 </div>
-<section>
+<section class="connect">
     <h2 class="headerTwo">Lets Connect!</h2>
     <button class="button">Downloadable Resume</button>
     <button class="button">carolynredford4@gmail.com</button>
     <button class="button">LinkedIn</button>
     <button class="button">Github</button>
-    <div class="portrait"> <img src="images/RedfordFamily-RMNP-3.JPEG" alt="portrait"> 
+    <div id="portrait"> <img class="portrait" src="images/RedfordFamily-RMNP-3.JPEG" alt="portrait"> 
     </div>
 </section>
 <footer>
     <h1 class="headerOne">Carolyn Redford</h1>
-    <nav class="inline-block">
-        <ul>
-            <li class="inline-block">Home</li>
-            <li class="inline-block">About</li>
-            <li class="inline-block">Contact</li>
-        </ul>
+     <nav class="navBar">
+        <h3 class="navBar">Home</h3>
+        <h3 class="navBar">About Me</h3>
+        <h3 class="navBar">Case Studies</h3>
     </nav>
 </footer>
 </body>
