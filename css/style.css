@@ -58,8 +58,8 @@ header {
    color: black;
    font-family: "Josefin Slab";
    margin-bottom: 0;
-   display: flex;
-   justify-content: flex-start;
+   position:relative;
+   left: -350px;
 }
 #headerJob {
    font-size: 24px;
@@ -67,6 +67,8 @@ header {
    margin-top: 0;
    display: flex;
    justify-content: flex-start;
+   position:relative;
+   left: -350px;
 }
 
 /* About Me */
@@ -97,7 +99,7 @@ header {
    border-radius: 8%;
    display: flex;
    justify-content: flex-start;
-   margin: -15px;
+   margin: -15px 0 0 -100px;
 }
 #portrait{
    width: 400px;
@@ -117,7 +119,7 @@ header {
 
 .caseStudiesContainer {
    text-align: left;
-   margin-top: 197px;
+   margin-top: 97px;
 }
 .projectBox {
    display: flex;
@@ -153,9 +155,12 @@ header {
 
 .arrow {
    border: solid black;
-   border-width: 0 3px 3px 0;
-   float: right;
+   border-width: 0px 3px 3px 0px;
+   position: absolute;
    padding: 3px;
+   height: 50px;
+   width: 50px;
+
 }
 .right {
    transform: rotate(-45deg);
@@ -189,7 +194,8 @@ header {
 }
 .connectSection {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
+   margin: 105px 0px 105px 0px;
 }
 .connect {
    display: flex;
@@ -222,6 +228,7 @@ footer {
    display: flex;
    align-content: center;
    justify-content: space-between;
+   padding: 64px 15px 15px 15px;
 }
 #footerName {
    font-size: 64px;
