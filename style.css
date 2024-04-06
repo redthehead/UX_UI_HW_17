@@ -1,4 +1,5 @@
 /* entire page */
+
 body {
    display: flex;
    flex-direction: column;
@@ -8,6 +9,7 @@ body {
 /* Homepage header section */
 
 /* Navigation */
+
 .navBar {
    display: flex;
    flex-direction: row;
@@ -26,6 +28,7 @@ body {
 }
 
  /* Header */
+
 header {
    background-color: #F2DAAC;
    opacity: 85%;
@@ -52,6 +55,7 @@ header {
 }
 
 /* About Me */
+
 .headerTwo {
    color: #731702;
    font-family: "Khula";
@@ -78,6 +82,7 @@ header {
    border-radius: 8%;
    display: flex;
    justify-content: flex-start;
+   margin: -15px;
 }
 #portrait{
    width: 400px;
@@ -125,7 +130,34 @@ header {
 }
 .headerThree {
    color: black;
+   font-size: 32px;
+   font-family: "Khula";
 }
+
+/*arrows*/
+
+.arrow {
+   border: solid black;
+   border-width: 0 3px 3px 0;
+   float: right;
+   padding: 3px;
+}
+.right {
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+ }
+ .left {
+   transform: rotate(135deg);
+   -webkit-transform: rotate(135deg);
+ }
+ .up {
+   transform: rotate(-135deg);
+   -webkit-transform: rotate(-135deg);
+ }
+ .down {
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+ }
 
 /*Lets Connect*/
 
@@ -138,16 +170,28 @@ header {
    flex-direction: column;
    justify-content: center;
    font: "Khula";
+   text-align: center;
 }
 .connect {
    display: flex;
-   display: table-column-group;
-   align-content: space-around;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 307px;
 }
 .socialButtons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+#socialButtonGit {
    height: 24px;
    width: 24px;
 }
+#socialButtonLinked {
+   height: 24px;
+   width: 24px;
+}
+
 
 /*Footer*/
 
@@ -166,8 +210,8 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
-
 }
+
 .homeItemFoot,
 .aboutItemFoot,
 .caseItemFoot {
