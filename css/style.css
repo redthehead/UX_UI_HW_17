@@ -172,6 +172,10 @@ header {
    font: "Khula";
    text-align: center;
 }
+.connectSection {
+   display: flex;
+   justify-content: space-between;
+}
 .connect {
    display: flex;
    flex-direction: column;
@@ -193,16 +197,18 @@ header {
 }
 
 
+
 /*Footer*/
 
 footer {
    opacity: 0.85;
    background-color: #f2daac;
-   height: 283px;
+   height: 200px;
    display: flex;
    align-content: center;
+   justify-content: space-between;
 }
-.footerName {
+#footerName {
    font-size: 64px;
    font-family: "Josefin Slab"
 }
@@ -211,7 +217,6 @@ footer {
    flex-direction: column;
    justify-content: flex-end;
 }
-
 .homeItemFoot,
 .aboutItemFoot,
 .caseItemFoot {
@@ -232,6 +237,7 @@ body {
 .headerOne {
     font-size:64px;
     color: black;
+    font-family: Josifin Slab;
  }
  .navBar {
     display: flex;
@@ -243,9 +249,11 @@ body {
  }
  #headerName {
     font-size: 64px;
+    font-family: Josifin Slab;
  }
  #headerJob {
     font-size: 24px;
+    font-family: Klee One;
  }
  .headerImg {
     float: right;
