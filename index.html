@@ -5,53 +5,48 @@
     <link rel="stylesheet" href="style.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Klee+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Khula&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Homepage header section-->
 <header>
     <nav class="navBar">
-        <h3 class="navBar">Home</h3>
-        <h3 class="navBar">About Me</h3>
-        <h3 class="navBar">Case Studies</h3>
+        <p class="homeItem">Home</p>
+        <p class="aboutItem">About Me</p>
+        <p class="caseItem">Case Studies</p>
     </nav>
-    <section class="headerOne">
+    <section>
         <h1 id="headerName">Carolyn Redford</h1>
         <h3 id="headerJob">UX Designer</h3>
     </section>
-    <div>
-        <img class="headerImg" src="images/headerImg.png" alt="Yellow Flowers" class="headerImage"> <!-- Your flowers image wasn't being pointed to correctly either. it used to look like this: "../images/Untitled.jpg"-->
-    </div>
 </header>
-<section class="aboutAndSkills"> 
-    <h2 class="headerTwo">About Me</h2>
-    <div class="aboutMe">
-        <div class="aboutMeBox">
-            <p class="description">
-                Designing unique solutions for the 
-                everyday user through continual learning and 
-                accepting challenges. I excel in research, prototyping, 
-                and coding positions. Engaging with the user directly and 
-                implementing their opinion on what matters to them is crucial 
-                to designing a functional piece of art.
-            </p>
-        </div>
+
+<!-- About me -->
+<section>
+<div class="headerTwo">
+    <p>About Me</p>
+</div>
+<section>
+
+<section class="aboutAndPort"> 
+    <div class="aboutDescription">
+        <p>
+            Designing unique solutions for the 
+            everyday user through continual learning and 
+            accepting challenges. I excel in research, prototyping, 
+            and coding positions. Engaging with the user directly and 
+            implementing their opinion on what matters to them is crucial 
+            to designing a functional piece of art.
+        </p>
     </div>
-    <div class="skills">
-        <h2 class="headerTwo">Skills</h2>
-        <div class="skillsBox">
-            <ul>
-                <li>Figma</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>User Research</li>
-            </ul>
-        </div>
+    <div id="portrait"> <img class="portrait" src="images/RedfordFamily-RMNP-3.JPEG" alt="portrait"> 
     </div>
 </section>
+
+<!-- Case Studies -->
 <div class="caseStudiesContainer">
     <h2 class="headerTwo">Case Studies</h2>
-    <section class="projectBox"> <!-- I put your project boxes into a section called projectBox to keep them grouped but also keep them seperate (if that makes sense). I did the same thing with the About me and Skills just to keep them kinda linked but as seperate objects. -->
+    <section class="projectBox">
         <div class="projectBox1">
             <h3 class="headerThree">Travel App Creation</h3>
             <p class="description">Through user interviews and 
@@ -68,28 +63,32 @@
                 the website to simplify the header and
                 modernize the website.</p>
         </div>
-        <div class="projectBox3">
-            <h3 class="headerThree">Government Website Redesign</h3>
-            <p class="description">Coming soon!</p>
-        </div>
     </section>
 </div>
+
+<!-- Lets Connect -->
+<h2 class="headerTwo">Lets Connect!</h2>
 <section class="connect">
-    <h2 class="headerTwo">Lets Connect!</h2>
     <button class="button">Downloadable Resume</button>
     <button class="button">carolynredford4@gmail.com</button>
     <button class="button"> <img id="socialButtons" src="Images/Github.png" atl="Github"> </button>
     <button class="button"> <img id="socialButtons" src="Images/linkedIn.png" alt="LinkedIn"> </button>
-    <div id="portrait"> <img class="portrait" src="images/RedfordFamily-RMNP-3.JPEG" alt="portrait"> 
-    </div>
 </section>
+
+<!-- Footer -->
 <footer>
-    <h1 class="headerOne">Carolyn Redford</h1>
-     <nav class="navBar">
-        <h3 class="navBar">Home</h3>
-        <h3 class="navBar">About Me</h3>
-        <h3 class="navBar">Case Studies</h3>
-    </nav>
+    <h1 id="footerName">Carolyn Redford</h1>
+    <section class="connect">
+        <button class="button">Downloadable Resume</button>
+        <button class="button">carolynredford4@gmail.com</button>
+        <button class="button"> <img class="socialButtons" src="Images/Github.png" atl="Github"> </button>
+        <button class="button"> <img class="socialButtons" src="Images/linkedIn.png" alt="LinkedIn"> </button>
+    </section>
+    <div class="footerNav">
+        <p class="homeItemFoot">Home</p>
+        <p class="aboutItemFoot">About Me</p>
+        <p class="caseItemFoot">Case Studies</p>
+    </div>
 </footer>
 </body>
 </html>
